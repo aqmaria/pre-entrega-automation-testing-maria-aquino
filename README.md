@@ -38,13 +38,13 @@ proyecto/
 ```
 ## Requisitos previos e Instalación
 
-# Descargar Microsoft Edge WebDriver
+### Descargar Microsoft Edge WebDriver
 Para que las pruebas automatizadas con Selenium puedan controlar tu navegador, es necesario instalar el WebDriver correspondiente:
 1. Entra a la página oficial de [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
 2. Descarga la versión de Microsoft Edge WebDriver que coincida exactamente con la versión de tu navegador Microsoft Edge.
 3. Coloca el archivo ejecutable (`msedgedriver.exe`) en la raíz de este proyecto (o de agregarlo a las variables de entorno `PATH` del sistema).
 
-# Instalación de dependencias
+### Instalación de dependencias
 
 Instalar las dependencias necesarias:
 
@@ -52,7 +52,7 @@ Instalar las dependencias necesarias:
 pip install selenium pytest pytest-html
 ```
 
-## Ejecucion de las pruebas
+### Ejecucion de las pruebas
 
 ### Ejecutar todas las pruebas
 
