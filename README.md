@@ -52,7 +52,7 @@ Instalar las dependencias necesarias:
 pip install selenium pytest pytest-html
 ```
 
-### Ejecucion de las pruebas
+## Ejecucion de las pruebas
 
 ### Ejecutar todas las pruebas
 
