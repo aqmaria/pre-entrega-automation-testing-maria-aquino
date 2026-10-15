@@ -1,4 +1,4 @@
-#Pre-entrega para el curso de Automation Testing de Talento Tech 
+# Pre-entrega para el curso de Automation Testing de Talento Tech 
 
 ## Proposito del proyecto
 
@@ -27,19 +27,16 @@ Las pruebas Selenium se encuentran separadas para evitar que la falla de un caso
 
 ```text
 proyecto/
-│
 ├── tests/
 │   ├── test.py
 │   └── utils_test.py
-│
 ├── utils/
 │   └── utils.py
-│
 ├── reports/
 │   ├── test_reports.html
 │   └── utils_test_reports.html
-│
 └── pytest.ini
+```
 
 ## Instalación de dependencias
 
