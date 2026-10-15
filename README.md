@@ -32,18 +32,24 @@ proyecto/
 │   └── utils_test.py
 ├── utils/
 │   └── utils.py
-├── reports/
-│   ├── test_reports.html
-│   └── utils_test_reports.html
-└── pytest.ini
+└── reports/
+    ├── test_reports.html
+    └── utils_test_reports.html
 ```
+## Requisitos previos e Instalación
 
-## Instalación de dependencias
+# Descargar Microsoft Edge WebDriver
+Para que las pruebas automatizadas con Selenium puedan controlar tu navegador, es necesario instalar el WebDriver correspondiente:
+1. Entra a la página oficial de [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
+2. Descarga la versión de Microsoft Edge WebDriver que coincida exactamente con la versión de tu navegador Microsoft Edge.
+3. Coloca el archivo ejecutable (`msedgedriver.exe`) en la raíz de este proyecto (o de agregarlo a las variables de entorno `PATH` del sistema).
+
+# Instalación de dependencias
 
 Instalar las dependencias necesarias:
 
 ```bash
-pip install selenium pytest
+pip install selenium pytest pytest-html
 ```
 
 ## Ejecucion de las pruebas
@@ -68,7 +74,5 @@ python -m pytest tests/utils_test.py -v --html=reports/utils_test_reports.html
 
 ## Consideraciones
 
-- Microsoft Edge debe estar instalado en el equipo para ejecutar las pruebas Selenium configuradas con `webdriver.Edge()`.
 - Las interacciones con la interfaz utilizan esperas explicitas mediante `WebDriverWait` y `expected_conditions`.
 - Cada prueba Selenium debe preparar su propio estado para mantener la independencia entre casos de prueba.
-- La falla de una prueba no debe impedir que Pytest ejecute las restantes.
